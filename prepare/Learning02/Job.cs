@@ -2,7 +2,7 @@ using System;
 
 public class Job
 {
-    // The C# convention is to start member variables with an underscore _
+    // The C# convention is to start member variables with an underscore _, that is correct.
     public string _company;
     public string _jobTitle;
 
