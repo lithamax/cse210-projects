@@ -1,4 +1,5 @@
 using System;
+using System.Linq.Expressions;
 
 class Program
 {
@@ -6,42 +7,39 @@ class Program
     {
         Console.Write("What is your grade percentage? ");
         string userInput = Console.ReadLine();
+        int userPercent = int.Parse(userInput);
 
-        int grade = int.Parse(userInput);
-
-        string letter = "";
-
-        if (grade >= 70)
+        if (userPercent == 70 || userPercent > 70)
         {
-
-            if (grade >= 90)
-            {
-                letter = "A";
-            }  
-            else if (grade >= 80)
-            {
-                letter = "B";
-            }
-            else if (grade >= 70)
-            {
-                letter = "C";
-            }
-        Console.WriteLine($"Your grade is {letter}.");         
-        Console.WriteLine("Congratulations and well done, you have passed!");
+            Console.Write("Congratulations, you passed!");
         }
-        else if (grade <70)
+        else
         {
-            if (grade >= 60)
-            {
-                letter = "D";
-            }
-            else
-            {
-                letter = "F";
-            }
-        Console.WriteLine($"Your grade is {letter}.");
-        Console.WriteLine("Sorry, you failed the course. Try again next time!");
+            Console.Write("You failed. Try again next time!");
         }
+
+            if (userPercent == 90 || userPercent > 90)
+            {
+                Console.Write("You achieved an A symbol");
+            }
+            else if (userPercent == 80 || userPercent > 80)
+            {
+                Console.Write("You achieved a B symbol");
+            }
+            else if (userPercent == 70 || userPercent > 70)
+            {
+                Console.Write("You achieved a C symbol");
+            }
+            else if (userPercent == 60 || userPercent > 60)
+            {
+                Console.Write("You achieved a D symbol");
+            }
+            else 
+            {
+                Console.Write("Unfortunately you obtained an F symbol");
+            }
+        
+        
         
     }
 }

@@ -5,31 +5,34 @@ class Program
     static void Main(string[] args)
     {
     
-        Random randomGenerator = new Random();
-        int userNumber = randomGenerator.Next(1, 101);
+        //Random randomGenerator = new Random();
+        //int userNumber = randomGenerator.Next(1, 101);
+        Console.Write("What is the magic number? ");
+        int magicNumber = int.Parse(Console.ReadLine());
         
         int userGuess = -1;
 
-        while (userGuess != userNumber)
+        while (userGuess != magicNumber)
         {
             Console.Write("What is your guess? ");
             userGuess = int.Parse(Console.ReadLine());
 
-            if (userGuess > userNumber)
-            {
-                Console.WriteLine("Lower");
-            }
-            else if (userGuess < userNumber)
+            if (userGuess < magicNumber)
             {
                 Console.WriteLine("Higher");
             }
+            else if (userGuess > magicNumber)
+            {
+                Console.WriteLine("Lower");
+            }
             else
             {
-            Console.WriteLine("You guessed it!");
-            }            
-        
+                Console.Write("You guessed it!");
+            }
         }
         
+        
+
 
     }
 }
