@@ -15,24 +15,24 @@ class Program
         }
         else
         {
-            Console.Write("You failed. Try again next time!");
+            Console.Write("You failed. Try again next time! ");
         }
 
             if (userPercent == 90 || userPercent > 90)
             {
-                Console.Write("You achieved an A symbol");
+                Console.Write("You have achieved an A symbol");
             }
             else if (userPercent == 80 || userPercent > 80)
             {
-                Console.Write("You achieved a B symbol");
+                Console.Write("You have achieved a B symbol");
             }
             else if (userPercent == 70 || userPercent > 70)
             {
-                Console.Write("You achieved a C symbol");
+                Console.Write("You have achieved a C symbol");
             }
             else if (userPercent == 60 || userPercent > 60)
             {
-                Console.Write("You achieved a D symbol");
+                Console.Write("You have achieved a D symbol");
             }
             else 
             {
