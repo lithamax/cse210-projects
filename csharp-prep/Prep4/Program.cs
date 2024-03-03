@@ -9,7 +9,7 @@ class Program
             int userNumber = -1;
             while (userNumber != 0)
             {
-                Console.Write("Enter a number (type 0 to quit): ");
+                Console.Write("Please enter a number (type 0 to quit): ");
                 
                 string userInput = Console.ReadLine();
                 userNumber = int.Parse(userInput);
